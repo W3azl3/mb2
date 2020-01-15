@@ -5,10 +5,9 @@ const RUNTIME = 'runtime';
 const PRECACHE_URLS = [
   'index.html',
   'js/index.js', // Alias for index.html
-  'serviceWorker.js',
   'node_modules/framework7/js/framework7.bundle.min.js',
   'node_modules/framework7/css/framework7.bundle.min.css',
-  'www'
+  'meineapp.webmanifest',
 ];
 
 // The install handler takes care of precaching the resources we always need.
