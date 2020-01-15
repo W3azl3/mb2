@@ -8,6 +8,7 @@ const PRECACHE_URLS = [
   'node_modules/framework7/js/framework7.bundle.min.js',
   'node_modules/framework7/css/framework7.bundle.min.css',
   'meineapp.webmanifest',
+  'js/morsecode.js'
 ];
 
 // The install handler takes care of precaching the resources we always need.
