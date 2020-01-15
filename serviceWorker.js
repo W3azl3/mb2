@@ -6,7 +6,8 @@ const PRECACHE_URLS = [
   'index.html',
   'js/index.js', // Alias for index.html
   'js/serviceWorker.js',
-  'node_modules/framework7',
+  'node_modules/framework7/js/framework7.bundle.min.js',
+  'node_modules/framework7/css/framework7.bundle.min.css',
   'www'
 ];
 
