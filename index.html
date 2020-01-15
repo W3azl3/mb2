@@ -72,16 +72,10 @@
         <script
          type="text/javascript" src="node_modules/framework7/js/framework7.bundle.min.js"></script>  
 
-          <script>if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('js/serviceWorker.js');
+          <script>
+          if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('js/serviceWorker.js', { scope:"../"});
           }
-          
-          document.querySelector('#show').addEventListener('click', () => {
-            const iconUrl = document.querySelector('select').selectedOptions[0].value;
-            let imgElement = document.createElement('img');
-            imgElement.src = iconUrl;
-            document.querySelector('#container').appendChild(imgElement);
-          });
           </script>
 
     </body>
