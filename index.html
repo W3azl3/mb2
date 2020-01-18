@@ -1,118 +1,119 @@
 <!DOCTYPE html>
-     
+
 <html>
-    <head>
-      <!--Testkommentar in der allerersten Zeile-->
-        <meta http-equiv="Content-Security-Policy" 
-        content="default-src 'self' 'unsafe-inline' data: gap: https://ssl.gstatic.com 'unsafe-eval'; 
+
+<head>
+  <!--Testkommentar in der allerersten Zeile-->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' data: gap: https://ssl.gstatic.com 'unsafe-eval'; 
                 style-src 'self' 'unsafe-inline'; 
                 media-src *; 
                 img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <link rel="stylesheet" type="text/css" href="node_modules/framework7/css/framework7.bundle.min.css">
-        <title>Hello World</title>
-        <link rel="manifest" href="meineapp.webmanifest">
-    </head>
-    <body onload="bodyGeladen();">
- 
-          <!-- App root element -->
-    <div id="app">
- 
-        <!-- Your main view, should have "view-main" class -->
-        <div class="view view-main">
-          <!-- Initial Page, "data-name" contains page name -->
-          <div data-name="home" class="page">
-  
-            <!-- Top Navbar -->
-            <div class="navbar">
-              <div class="navbar-bg"></div>
-              <div class="navbar-inner">
-                <div class="title">Awesome App</div>
-              </div>
-            </div>
-  
-            <!-- Bottom Toolbar -->
-            <div class="toolbar toolbar-bottom">
-              <div class="toolbar-inner">
-                <!-- Toolbar links -->
-                <a href="#" class="link">Link 1</a>
-                <a href="#" class="link">Link 2</a>
-              </div>
-            </div>
-  
-            <!-- Scrollable page content -->
-            <div class="page-content">
-              <p>
-                <div class="card">
-                  <div class="card-content card-content-padding card-outline">
-                    <a href="javascript:locationupdaten();">Hier klicken</a>, um die Location abzurufen
-                  </div>
-                </div>
- 
-                <div class="card">
-                  <div class="card-content card-content-padding" id="locationcard">
-                    
-                  </div>
-                </div>
-                  
-              </p>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+  <link rel="stylesheet" type="text/css" href="node_modules/framework7/css/framework7.bundle.min.css">
+  <title>Morsecode-Trainer</title>
+  <link rel="manifest" href="meineapp.webmanifest">
+</head>
 
-              <div class="card">
-                <div class="card-content card-content-padding">
-                  <div class="block-title">Full Layout / Inline Labels</div>
-<div class="list inline-labels no-hairlines-md">
-  <ul>
-    <li class="item-content item-input">
-      <div class="item-media">
-        <i class="icon demo-list-icon"></i>
-      </div>
-      <div class="item-inner">
-        <div class="item-title item-label">Zu morsendes Zeichen</div>
-        <div class="item-input-wrap">
-          <input type="text" placeholder="Morsezeichen" maxlength="1" minlength="1" id='letterToMorse'>
-          <span class="input-clear-button"></span>
+<body onload="bodyGeladen();">
+
+  <!-- App root element -->
+  <div id="app">
+
+    <!-- Your main view, should have "view-main" class -->
+    <div class="view view-main">
+      <!-- Initial Page, "data-name" contains page name -->
+      <div data-name="home" class="page">
+
+        <!-- Top Navbar -->
+        <div class="navbar">
+          <div class="navbar-bg"></div>
+          <div class="navbar-inner">
+            <div class="title">MorseApp</div>
+          </div>
+        </div>
+
+        <!-- Bottom Toolbar -->
+        <div class="toolbar toolbar-bottom">
+          <div class="toolbar-inner">
+            <!-- Toolbar links -->
+            <a href="#" class="link">Link 1</a>
+            <a href="#" class="link">Link 2</a>
+          </div>
+        </div>
+
+        <!-- Scrollable page content -->
+        <div class="page-content">
+          <p>
+            <div class="card">
+              <div class="card-content card-content-padding card-outline">
+                <a href="javascript:locationupdaten();">Hier klicken</a>, um die Location abzurufen
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-content card-content-padding" id="locationcard">
+
+              </div>
+            </div>
+
+          </p>
+
+          <div class="card">
+            <div class="card-content card-content-padding">
+              <div class="block-title">Eingabemaske</div>
+              <div class="list inline-labels no-hairlines-md">
+                <ul>
+                  <li class="item-content item-input">
+                    <div class="item-media">
+                      <i class="icon demo-list-icon"></i>
+                    </div>
+                    <div class="item-inner">
+                      <div class="item-title item-label">Zu morsendes Zeichen</div>
+                      <div class="item-input-wrap">
+                        <input type="text" placeholder="Morsezeichen" maxlength="1" minlength="1" id='letterToMorse'>
+                        <span class="input-clear-button"></span>
+                      </div>
+                    </div>
+                  </li>
+                  </li>
+                </ul>
+              </div>
+              <p></p>
+              <div class="block">
+                <div class="row">
+                  <button class="button col" onclick="alphabet(letterToMorse)">Übersetzen</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content card-content-padding" id="morseSignLetter">
+
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content card-content-padding" id="morseSign">
+
+            </div>
+          </div>
         </div>
       </div>
-    </li>
-    </li>
-  </ul>
-</div>
-<p></p>
-<div class="block">
-  <div class="row">
-    <button class="button col" onclick="alphabet(letterToMorse)">Übersetzen</button>
+    </div>
   </div>
-</div>
 
-                </div>
-              </div>
-          
-            </div>
-          </div>
-          </div>
-        </div>
-
-        
+  <script>
+    window.usingCordova = false;
+  </script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="node_modules/framework7/js/framework7.bundle.min.js"></script>
+  <script type="text/javascript" src="js/morsecode.js"></script>
 
 
-
-
-
-
-        
-        <script>
-          window.usingCordova=false;
-          </script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script
-         type="text/javascript" src="node_modules/framework7/js/framework7.bundle.min.js"></script> 
-         <script type="text/javascript" src="js/morsecode.js"></script> 
-         <script type="text/javascript" src="cordova.js"
-         onload="javascript:window.usingCordova=true;"></script>
- 
-         <!--
+  <!--
           <script>
           if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('serviceWorker.js', { scope:"./"});
@@ -121,21 +122,24 @@
           >
           -->
 
-        <script>
-          if ('serviceWorker' in navigator) {
-            // Register a service worker hosted at the root of the
-            // site using a more restrictive scope.
-            navigator.serviceWorker.register('serviceWorker.js')
-              .then(function (registration) {
-                console.log('Service worker registration succeeded:', registration);
-              })
-              .catch(function (error) {
-                console.log('Service worker registration failed:', error);
-              });
-          } else {
-            console.log('Service workers are not supported.');
-          }
-        </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      // Register a service worker hosted at the root of the
+      // site using a more restrictive scope.
+      navigator.serviceWorker.register('serviceWorker.js')
+        .then(function (registration) {
+          console.log('Service worker registration succeeded:', registration);
+        })
+        .catch(function (error) {
+          console.log('Service worker registration failed:', error);
+        });
+    } else {
+      console.log('Service workers are not supported.');
+    }
+  </script>
 
-    </body>
+
+
+</body>
+
 </html>
