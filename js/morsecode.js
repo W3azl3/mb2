@@ -17,6 +17,8 @@ function alphabet(buchstabe) {
         case 'b':
             console.log('Erkannter Code für B');
             musterForm = ['l', 's', 's', 's'];
+            vibrateMuster(musterForm);
+            returnMorseResponseLetter(musterForm);
             buildedMorseSign = buildMorseSign(musterForm);
             console.log('buildedMorseSign: ' + buildedMorseSign);
             returnMorseSign(buildedMorseSign);
@@ -24,6 +26,8 @@ function alphabet(buchstabe) {
         case 'c':
             console.log('Erkannter Code für C');
             musterForm = ['l', 's', 'l', 's'];
+            vibrateMuster(musterForm);
+            returnMorseResponseLetter(musterForm);
             buildedMorseSign = buildMorseSign(musterForm);
             console.log('buildedMorseSign: ' + buildedMorseSign);
             returnMorseSign(buildedMorseSign);
@@ -31,6 +35,8 @@ function alphabet(buchstabe) {
         case 'd':
             console.log('Erkannter Code für D');
             musterForm = ['l', 's', 's'];
+            vibrateMuster(musterForm);
+            returnMorseResponseLetter(musterForm);
             buildedMorseSign = buildMorseSign(musterForm);
             console.log('buildedMorseSign: ' + buildedMorseSign);
             returnMorseSign(buildedMorseSign);
@@ -38,6 +44,8 @@ function alphabet(buchstabe) {
         case 'e':
             console.log('Erkannter Code für B');
             musterForm = ['s'];
+            vibrateMuster(musterForm);
+            returnMorseResponseLetter(musterForm);
             buildedMorseSign = buildMorseSign(musterForm);
             console.log('buildedMorseSign: ' + buildedMorseSign);
             returnMorseSign(buildedMorseSign);
@@ -45,6 +53,8 @@ function alphabet(buchstabe) {
         case 'f':
             console.log('Erkannter Code für B');
             musterForm = ['s', 's', 'l', 's'];
+            vibrateMuster(musterForm);
+            returnMorseResponseLetter(musterForm);
             buildedMorseSign = buildMorseSign(musterForm);
             console.log('buildedMorseSign: ' + buildedMorseSign);
             returnMorseSign(buildedMorseSign);
@@ -52,6 +62,8 @@ function alphabet(buchstabe) {
         case 'g':
             console.log('Erkannter Code für B');
             musterForm = ['l', 'l','s'];
+            vibrateMuster(musterForm);
+            returnMorseResponseLetter(musterForm);
             buildedMorseSign = buildMorseSign(musterForm);
             console.log('buildedMorseSign: ' + buildedMorseSign);
             returnMorseSign(buildedMorseSign);
@@ -59,6 +71,8 @@ function alphabet(buchstabe) {
         case 'h':
             console.log('Erkannter Code für B');
             musterForm = ['s', 's', 's', 's'];
+            vibrateMuster(musterForm);
+            returnMorseResponseLetter(musterForm);
             buildedMorseSign = buildMorseSign(musterForm);
             console.log('buildedMorseSign: ' + buildedMorseSign);
             returnMorseSign(buildedMorseSign);
@@ -66,6 +80,8 @@ function alphabet(buchstabe) {
         case 'i':
             console.log('Erkannter Code für B');
             musterForm = ['s', 's'];
+            vibrateMuster(musterForm);
+            returnMorseResponseLetter(musterForm);
             buildedMorseSign = buildMorseSign(musterForm);
             console.log('buildedMorseSign: ' + buildedMorseSign);
             returnMorseSign(buildedMorseSign);
@@ -73,6 +89,8 @@ function alphabet(buchstabe) {
         case 'j':
             console.log('Erkannter Code für B');
             musterForm = ['s', 'l', 'l', 'l'];
+            vibrateMuster(musterForm);
+            returnMorseResponseLetter(musterForm);
             buildedMorseSign = buildMorseSign(musterForm);
             console.log('buildedMorseSign: ' + buildedMorseSign);
             returnMorseSign(buildedMorseSign);
@@ -80,6 +98,8 @@ function alphabet(buchstabe) {
         case 'k':
             console.log('Erkannter Code für B');
             musterForm = ['l', 's', 'l'];
+            vibrateMuster(musterForm);
+            returnMorseResponseLetter(musterForm);
             buildedMorseSign = buildMorseSign(musterForm);
             console.log('buildedMorseSign: ' + buildedMorseSign);
             returnMorseSign(buildedMorseSign);
@@ -87,6 +107,8 @@ function alphabet(buchstabe) {
         case 'l':
             console.log('Erkannter Code für B');
             musterForm = ['s', 'l', 's', 's'];
+            vibrateMuster(musterForm);
+            returnMorseResponseLetter(musterForm);
             buildedMorseSign = buildMorseSign(musterForm);
             console.log('buildedMorseSign: ' + buildedMorseSign);
             returnMorseSign(buildedMorseSign);
@@ -94,6 +116,8 @@ function alphabet(buchstabe) {
         case 'm':
             console.log('Erkannter Code für B');
             musterForm = ['l', 'l',];
+            vibrateMuster(musterForm);
+            returnMorseResponseLetter(musterForm);
             buildedMorseSign = buildMorseSign(musterForm);
             console.log('buildedMorseSign: ' + buildedMorseSign);
             returnMorseSign(buildedMorseSign);
@@ -101,6 +125,8 @@ function alphabet(buchstabe) {
         case 'n':
             console.log('Erkannter Code für B');
             musterForm = ['l', 's',];
+            vibrateMuster(musterForm);
+            returnMorseResponseLetter(musterForm);
             buildedMorseSign = buildMorseSign(musterForm);
             console.log('buildedMorseSign: ' + buildedMorseSign);
             returnMorseSign(buildedMorseSign);
@@ -108,6 +134,8 @@ function alphabet(buchstabe) {
         case 'o':
             console.log('Erkannter Code für B');
             musterForm = ['l', 'l', 'l'];
+            vibrateMuster(musterForm);
+            returnMorseResponseLetter(musterForm);
             buildedMorseSign = buildMorseSign(musterForm);
             console.log('buildedMorseSign: ' + buildedMorseSign);
             returnMorseSign(buildedMorseSign);
@@ -115,6 +143,8 @@ function alphabet(buchstabe) {
         case 'p':
             console.log('Erkannter Code für B');
             musterForm = ['s', 'l', 'l', 's'];
+            vibrateMuster(musterForm);
+            returnMorseResponseLetter(musterForm);
             buildedMorseSign = buildMorseSign(musterForm);
             console.log('buildedMorseSign: ' + buildedMorseSign);
             returnMorseSign(buildedMorseSign);
@@ -122,6 +152,8 @@ function alphabet(buchstabe) {
         case 'q':
             console.log('Erkannter Code für B');
             musterForm = ['l', 'l', 's', 'l'];
+            vibrateMuster(musterForm);
+            returnMorseResponseLetter(musterForm);
             buildedMorseSign = buildMorseSign(musterForm);
             console.log('buildedMorseSign: ' + buildedMorseSign);
             returnMorseSign(buildedMorseSign);
@@ -129,6 +161,8 @@ function alphabet(buchstabe) {
         case 'r':
             console.log('Erkannter Code für B');
             musterForm = ['s', 'l', 's'];
+            vibrateMuster(musterForm);
+            returnMorseResponseLetter(musterForm);
             buildedMorseSign = buildMorseSign(musterForm);
             console.log('buildedMorseSign: ' + buildedMorseSign);
             returnMorseSign(buildedMorseSign);
@@ -136,6 +170,8 @@ function alphabet(buchstabe) {
         case 's':
             console.log('Erkannter Code für B');
             musterForm = ['s', 's', 's'];
+            vibrateMuster(musterForm);
+            returnMorseResponseLetter(musterForm);
             buildedMorseSign = buildMorseSign(musterForm);
             console.log('buildedMorseSign: ' + buildedMorseSign);
             returnMorseSign(buildedMorseSign);
@@ -143,6 +179,8 @@ function alphabet(buchstabe) {
         case 't':
             console.log('Erkannter Code für B');
             musterForm = ['l'];
+            vibrateMuster(musterForm);
+            returnMorseResponseLetter(musterForm);
             buildedMorseSign = buildMorseSign(musterForm);
             console.log('buildedMorseSign: ' + buildedMorseSign);
             returnMorseSign(buildedMorseSign);
@@ -150,6 +188,8 @@ function alphabet(buchstabe) {
         case 'u':
             console.log('Erkannter Code für B');
             musterForm = ['s', 's', 'l'];
+            vibrateMuster(musterForm);
+            returnMorseResponseLetter(musterForm);
             buildedMorseSign = buildMorseSign(musterForm);
             console.log('buildedMorseSign: ' + buildedMorseSign);
             returnMorseSign(buildedMorseSign);
@@ -157,6 +197,8 @@ function alphabet(buchstabe) {
         case 'v':
             console.log('Erkannter Code für B');
             musterForm = ['s', 's', 's', 'l'];
+            vibrateMuster(musterForm);
+            returnMorseResponseLetter(musterForm);
             buildedMorseSign = buildMorseSign(musterForm);
             console.log('buildedMorseSign: ' + buildedMorseSign);
             returnMorseSign(buildedMorseSign);
@@ -164,6 +206,8 @@ function alphabet(buchstabe) {
         case 'w':
             console.log('Erkannter Code für B');
             musterForm = ['s', 'l', 'l'];
+            vibrateMuster(musterForm);
+            returnMorseResponseLetter(musterForm);
             buildedMorseSign = buildMorseSign(musterForm);
             console.log('buildedMorseSign: ' + buildedMorseSign);
             returnMorseSign(buildedMorseSign);
@@ -171,6 +215,8 @@ function alphabet(buchstabe) {
         case 'x':
             console.log('Erkannter Code für B');
             musterForm = ['l', 's', 's', 'l'];
+            vibrateMuster(musterForm);
+            returnMorseResponseLetter(musterForm);
             buildedMorseSign = buildMorseSign(musterForm);
             console.log('buildedMorseSign: ' + buildedMorseSign);
             returnMorseSign(buildedMorseSign);
@@ -178,6 +224,8 @@ function alphabet(buchstabe) {
         case 'y':
             console.log('Erkannter Code für B');
             musterForm = ['l', 's', 'l', 'l'];
+            vibrateMuster(musterForm);
+            returnMorseResponseLetter(musterForm);
             buildedMorseSign = buildMorseSign(musterForm);
             console.log('buildedMorseSign: ' + buildedMorseSign);
             returnMorseSign(buildedMorseSign);
@@ -185,6 +233,8 @@ function alphabet(buchstabe) {
         case 'z':
             console.log('Erkannter Code für B');
             musterForm = ['l', 'l', 's', 's'];
+            vibrateMuster(musterForm);
+            returnMorseResponseLetter(musterForm);
             buildedMorseSign = buildMorseSign(musterForm);
             console.log('buildedMorseSign: ' + buildedMorseSign);
             returnMorseSign(buildedMorseSign);
