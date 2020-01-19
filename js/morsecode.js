@@ -155,7 +155,7 @@ function alphabet(buchstabe) {
       vibriere(finalArray);
 }
 
-// Erstelle Vibrationsmuster auf Basis von "muster" (s für short, l für long)
+// Erstelle Vibrationsmuster auf Basis von "muster" (s für short, l für long, " " für Leerzeichen)
 function vibrateMuster(muster) {
     let tempDauerArray = [];
     console.log(muster);
@@ -185,17 +185,20 @@ function vibrateMuster(muster) {
     return tempDauerArray;
 }
 
+// Vibriere nach Vorgaben von "dauer"
 function vibriere(dauer) {
     console.log('Vibriere jetzt mit Pattern: ' + dauer);
     navigator.vibrate(dauer);
 }
 
+// Aktualisiere Feld "morseSign" auf index.html
 function returnMorseSign(morseSign){
     console.log('Morsezeichen ist: ' + morseSign);
     let morseResponseSign = document.getElementById("morseSign");
     morseResponseSign.innerText = [morseSign];
 }
 
+// Aktualisiere Feld "morseSignLetter" auf index.html
 function returnMorseResponseLetter(morseLetter){
     console.log('MorseLetter ist: ' + morseLetter);
     let morseResponseLetter = document.getElementById("morseSignLetter");
@@ -217,6 +220,8 @@ function buildMorseSign(morseCode){
     return tempMorseSign;
 }
 
+// Input: tempMusterForm als Muster (s,l," ") das in Morsepattern übersetzt wird und an tempFinalArray angehangen wird. 
+// Output: tempFinalArray dass ergänzt um neues tempMusterForm ergänzt zurückgegeben wird. Zustäzlich Aufruf von Funktionen "buildMorseSign" und "returnMorseSign" um Felder auf index.html zu aktualisieren
 function doAndAct(tempMusterForm, tempFinalArray) {
     returnMorseResponseLetter(tempMusterForm);
     buildedMorseSign = buildMorseSign(tempMusterForm);
@@ -226,8 +231,8 @@ function doAndAct(tempMusterForm, tempFinalArray) {
     return tempFinalArray;
 }
 
+// Input: appendArray das an shortArray angehangen wird. Output: zusammengehängtes Array
 function arrayConcat(appendArray, shortArray){
-    console.log('XXXX: ' + shortArray)
     appendArray.forEach(element => {
         shortArray.push(element)
         console.log('Element: ' + element);
