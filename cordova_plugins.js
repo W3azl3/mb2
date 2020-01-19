@@ -45,13 +45,22 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
       "pluginId": "cordova-plugin-geolocation",
       "runs": true
+    },
+    {
+      "id": "cordova-plugin-flashlight.Flashlight",
+      "file": "plugins/cordova-plugin-flashlight/www/Flashlight.js",
+      "pluginId": "cordova-plugin-flashlight",
+      "clobbers": [
+        "window.plugins.flashlight"
+      ]
     }
   ];
   module.exports.metadata = {
-    "cordova-plugin-whitelist": "1.3.4",
     "cordova-plugin-browsersync-gen2": "1.1.7",
     "cordova-plugin-camera": "4.1.0",
     "cordova-plugin-geolocation": "4.0.2",
-    "cordova-plugin-vibration": "3.1.1"
+    "cordova-plugin-vibration": "3.1.1",
+    "cordova-plugin-whitelist": "1.3.4",
+    "cordova-plugin-flashlight": "3.2.0"
   };
 });
