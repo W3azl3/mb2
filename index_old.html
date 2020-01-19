@@ -3,8 +3,7 @@
 <html>
 
 <head>
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'  data: gap: https://ssl.gstatic.com 'unsafe-eval'; 
-                connect-src *;
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' data: gap: https://ssl.gstatic.com 'unsafe-eval'; 
                 style-src 'self' 'unsafe-inline'; 
                 media-src *; 
                 img-src 'self' data: content:;">
@@ -46,53 +45,9 @@
                 <!-- Scrollable page content -->
                 <div class="page-content">
                     <div class="card">
-                        <div class="card-content card-content-padding">
-                            <div class="block-title">Eingabemaske</div>
-                            <div class="list inline-labels no-hairlines-md">
-                                <ul>
-                                    <li class="item-content item-input">
-                                        <div class="item-media">
-                                            <i class="icon demo-list-icon"></i>
-                                        </div>
-                                        <div class="item-inner">
-                                            <div class="item-title item-label">Zu morsendes Zeichen</div>
-                                            <div class="item-input-wrap">
-                                                <input type="text" placeholder="Morsezeichen" id='letterToMorse'>
-                                                <span class="input-clear-button"></span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    </li>
-                                </ul>
-                            </div>
-                            <p></p>
-                            <div class="block">
-                                <div class="row">
-                                    <button class="button col" onclick="alphabet(letterToMorse)">Übersetzen</button>
-                                    <div class="block">
-                                        <div class="block-title">
-                                        <div class="card-content">Der Morsetext lautet: </div>
-                                    </div>
-                                        <div class="card-content" id="morseSignLetter"></div>
-                                    </div>
-                                    <div class="block">
-                                        <div class="card-content">Die Morsecode lautet: </div>
-                                        <div class="card-content" id="morseSign"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-content card-content-padding">
-                            
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-content card-content-padding">
-
+                        <div class="card-content card-content-padding" id="morseSignLetter">
+                          In dieser App hast Du die Möglichkeit Teile eines Textes in Morsecode übersetzten zu lassen oder Deine Skills zu testen! <p></p>
+                          Bitte wähle dazu eine der Funktionen aus dem unteren Ende!
                         </div>
                     </div>
                 </div>
