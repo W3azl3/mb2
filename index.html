@@ -3,7 +3,6 @@
 <html>
 
 <head>
-  <!--Testkommentar in der allerersten Zeile-->
   <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' data: gap: https://ssl.gstatic.com 'unsafe-eval'; 
                 style-src 'self' 'unsafe-inline'; 
                 media-src *; 
@@ -59,7 +58,7 @@
             </div>
 
           </p>
-
+         
           <div class="card">
             <div class="card-content card-content-padding">
               <div class="block-title">Eingabemaske</div>
@@ -72,7 +71,7 @@
                     <div class="item-inner">
                       <div class="item-title item-label">Zu morsendes Zeichen</div>
                       <div class="item-input-wrap">
-                        <input type="text" placeholder="Morsezeichen" maxlength="1" minlength="1" id='letterToMorse'>
+                        <input type="text" placeholder="Morsezeichen" id='letterToMorse'>
                         <span class="input-clear-button"></span>
                       </div>
                     </div>
@@ -111,16 +110,6 @@
   <script type="text/javascript" src="js/index.js"></script>
   <script type="text/javascript" src="node_modules/framework7/js/framework7.bundle.min.js"></script>
   <script type="text/javascript" src="js/morsecode.js"></script>
-
-
-  <!--
-          <script>
-          if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('serviceWorker.js', { scope:"./"});
-          }
-          </script
-          >
-          -->
 
   <script>
     if ('serviceWorker' in navigator) {
