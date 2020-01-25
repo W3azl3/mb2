@@ -89,10 +89,8 @@ function spielErgebnis(solution){
     } else {
         alertButtonText = 'Noch ein Versuch?';
         alertButtonTitle = 'Falsch!';
-        // alert("Richtig erkannt!");
     } else {
         alertButtonText = 'Noch ein Versuch?';
         alertButtonTitle = 'Falsch!';
-        // alert("Leider nicht richtig erkannt!")
     }
 }
