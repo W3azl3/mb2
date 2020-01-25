@@ -35,13 +35,13 @@
     "x": "lssl",
     "y": "lsll",
     "z": "llss",
-    "s": "slslsl",
+    ".": "slslsl",
     ",": "llssll",
     "?": "ssllss",
     "!": "lslsll",
-    "l": "lssssl",
     "/": "lssls",
     "@": "sllsls",
     "(": "lslls",
-    ")": "lsllsl"
+    ")": "lsllsl",
+    " ": "l"
   }

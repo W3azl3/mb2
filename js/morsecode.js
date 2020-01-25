@@ -1,4 +1,7 @@
-function loadJson(path, callback){
+let morseSignLetterFull = '';
+let morseSignFull = '';
+
+function loadJson(path, callback) {
     var request = new XMLHttpRequest();
     request.overrideMimeType("application/json");
     request.onreadystatechange = () => {
@@ -12,8 +15,11 @@ function loadJson(path, callback){
     request.send(null);
 }
 
-
-function alphabet(buchstabe) {
+function alphabet(buchstabe, herkunft) {
+    // buchstabe = String(buchstabe);
+    morseSignFull = '';
+    morseSignLetterFull = '';
+    console.log('****' + buchstabe);
     let musterForm;
     let letterToMorse;
     let buildedMorseSign;
@@ -21,16 +27,21 @@ function alphabet(buchstabe) {
     let finalArray = [];
     var requestURL = './data/LetterToMorse.json';
 
-    buchstabe.value = buchstabe.value.toLowerCase();
+    if (herkunft == 'uebung') {
+        buchstabe = buchstabe.value;
+    }
 
 
+    buchstabe = buchstabe.toLowerCase();
+    console.log('LowerCaseWord: ' + buchstabe);
 
-    function initUnitsPage(){
-        loadJson('data/LetterToMorse.json',function(response){
+
+    function initUnitsPage() {
+        loadJson('data/LetterToMorse.json', function (response) {
             var actual_JSON = JSON.parse(response);
             // console.log('done OOOOOIIIIOOOO' + actual_JSON.a);
-            for (var i = 0; i < buchstabe.value.toString().length; i++) {
-                switch (buchstabe.value.charAt(i)) {
+            for (var i = 0; i < buchstabe.toString().length; i++) {
+                switch (buchstabe.charAt(i)) {
                     case 'a':
                         console.log('Erkannter Code für A');
                         musterForm = actual_JSON.a;
@@ -172,16 +183,16 @@ function alphabet(buchstabe) {
                         break;
                 }
                 vibriere(finalArray);
-        
-        
+
+
             }
         });
     }
 
-    // initUnitsPage();
+    initUnitsPage();
 
 
-    
+
 }
 
 // Erstelle Vibrationsmuster auf Basis von "muster" (s für short, l für long, " " für Leerzeichen)
@@ -201,7 +212,7 @@ function vibrateMuster(muster) {
                 tempDauerArray.push('300');
                 tempDauerArray.push('100');
                 break;
-            case ' ':
+            case 'x':
                 console.log('Länge "Leerzeichen"');
                 tempDauerArray.push('0');
                 tempDauerArray.push('700');
@@ -224,15 +235,17 @@ function vibriere(dauer) {
 // Aktualisiere Feld "morseSign" auf index.html
 function returnMorseSign(morseSign) {
     console.log('Morsezeichen ist: ' + morseSign);
+    morseSignFull = morseSignFull + morseSign + ' ';
     let morseResponseSign = document.getElementById("morseSign");
-    morseResponseSign.innerText = [morseSign];
+    morseResponseSign.innerText = [morseSignFull];
 }
 
 // Aktualisiere Feld "morseSignLetter" auf index.html
-function returnMorseResponseLetter(morseLetter) {
-    console.log('MorseLetter ist: ' + morseLetter);
+function returnMorseResponseLetter(morseSignLetter) {
+    console.log('MorseLetter ist: ' + morseSignLetter);
+    morseSignLetterFull = morseSignLetterFull + morseSignLetter + ' ';
     let morseResponseLetter = document.getElementById("morseSignLetter");
-    morseResponseLetter.innerText = [morseLetter];
+    morseResponseLetter.innerText = [morseSignLetterFull];
 }
 
 // Erstelle Morsezeichen (·-) aus Morsecode (s und l)
@@ -243,6 +256,19 @@ function buildMorseSign(morseCode) {
 
 
     for (var i = 0; i < morseCode.length; i++) {
+
+        // switch (morseCode.charAt(i)) {
+        //     case "s":
+        //         tempMorseSign = tempMorseSign + '·';
+        //         break;
+        //     case "l":
+        //         tempMorseSign = tempMorseSign + '-';
+        //     case "x":
+        //         tempMorseSign = tempMorseSign + 'x';
+        //         break;
+        // }
+        console.log('charAt: "' + i + '"');
+
         if (morseCode.charAt(i) == 's') {
             tempMorseSign = tempMorseSign + '·'
         } else {
