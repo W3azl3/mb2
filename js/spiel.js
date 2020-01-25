@@ -89,8 +89,5 @@ function spielErgebnis(solution){
     } else {
         alertButtonText = 'Noch ein Versuch?';
         alertButtonTitle = 'Falsch!';
-    } else {
-        alertButtonText = 'Noch ein Versuch?';
-        alertButtonTitle = 'Falsch!';
-    }
+    } 
 }
