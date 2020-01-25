@@ -1,3 +1,6 @@
+let alertButtonText = 'Textkörper';
+let alertButtonTitle = 'Texttitle';
+
 function locationupdaten() {
     navigator.geolocation.getCurrentPosition(
         function(pos) {
@@ -31,7 +34,12 @@ function initApp(){
             panel: {
                 swipe: 'left',
             }
+            
         });
+        var alertKorrekt = Dom7;
+        alertKorrekt('.open-alert').on('click', function () {
+            app.dialog.alert(alertButtonText, alertButtonTitle);
+          });
     }
     
 
