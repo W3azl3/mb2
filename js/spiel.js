@@ -84,9 +84,13 @@ function spielErgebnis(solution){
     console.log('Zwischenergebnis: ' + solution);
     console.log('randomPosition: ' + randomPosition);
     if (solution==randomPosition) {
-        alert("Richtig erkannt!");
+        alertButtonText = 'Grandiose Leistung von Dir!';
+        alertButtonTitle = 'Korrekt!';
+        // alert("Richtig erkannt!");
     } else {
-        alert("Leider nicht richtig erkannt!")
+        alertButtonText = 'Noch ein Versuch?';
+        alertButtonTitle = 'Falsch!';
+        // alert("Leider nicht richtig erkannt!")
     }
     // console.log('Ergnis korrekt!');
     // console.log('Ergnis falsch!');
