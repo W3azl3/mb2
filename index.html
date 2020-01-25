@@ -68,11 +68,11 @@
                             <p></p>
                             <div class="block">
                                 <div class="row">
-                                    <button class="button col" onclick="alphabet(letterToMorse)">Übersetzen</button>
+                                    <button class="button col" onclick="alphabet(letterToMorse, 'uebung')">Übersetzen</button>
                                     <div class="block">
                                         <div class="block-title">
-                                        <div class="card-content">Der Morsetext lautet: </div>
-                                    </div>
+                                            <div class="card-content">Der Morsetext lautet: </div>
+                                        </div>
                                         <div class="card-content" id="morseSignLetter"></div>
                                     </div>
                                     <div class="block">
@@ -86,14 +86,18 @@
 
                     <div class="card">
                         <div class="card-content card-content-padding">
+
+                            <input class="col button button-fill" type="button" value="Neue Spielrunde" onclick="startGame()">
+                        </div>
+                        
+                        <div class="row">
                             
+                            <button class="button col" id="solution1" onclick="spielErgebnis('1')">Button</button>
+                        
+                            <button class="button col" id="solution2" onclick="spielErgebnis('2')">Button</button>
+                        
                         </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-content card-content-padding">
-
-                        </div>
+                    
                     </div>
                 </div>
             </div>
@@ -106,6 +110,8 @@
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="node_modules/framework7/js/framework7.bundle.min.js"></script>
     <script type="text/javascript" src="js/morsecode.js"></script>
+    <script type="text/javascript" src="js/spiel.js"></script>
+
 
     <script>
         if ('serviceWorker' in navigator) {

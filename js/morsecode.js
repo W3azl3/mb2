@@ -1,4 +1,4 @@
-function loadJson(path, callback){
+function loadJson(path, callback) {
     var request = new XMLHttpRequest();
     request.overrideMimeType("application/json");
     request.onreadystatechange = () => {
@@ -12,8 +12,10 @@ function loadJson(path, callback){
     request.send(null);
 }
 
+function alphabet(buchstabe, herkunft) {
+    // buchstabe = String(buchstabe);
 
-function alphabet(buchstabe) {
+    console.log('****' + buchstabe);
     let musterForm;
     let letterToMorse;
     let buildedMorseSign;
@@ -21,16 +23,21 @@ function alphabet(buchstabe) {
     let finalArray = [];
     var requestURL = './data/LetterToMorse.json';
 
-    buchstabe.value = buchstabe.value.toLowerCase();
+    if (herkunft == 'uebung') {
+        buchstabe = buchstabe.value;
+    }
+    
+
+    buchstabe = buchstabe.toLowerCase();
+    console.log('LowerCaseWord: ' + buchstabe);
 
 
-
-    function initUnitsPage(){
-        loadJson('data/LetterToMorse.json',function(response){
+    function initUnitsPage() {
+        loadJson('data/LetterToMorse.json', function (response) {
             var actual_JSON = JSON.parse(response);
             // console.log('done OOOOOIIIIOOOO' + actual_JSON.a);
-            for (var i = 0; i < buchstabe.value.toString().length; i++) {
-                switch (buchstabe.value.charAt(i)) {
+            for (var i = 0; i < buchstabe.toString().length; i++) {
+                switch (buchstabe.charAt(i)) {
                     case 'a':
                         console.log('Erkannter Code für A');
                         musterForm = actual_JSON.a;
@@ -172,16 +179,16 @@ function alphabet(buchstabe) {
                         break;
                 }
                 vibriere(finalArray);
-        
-        
+
+
             }
         });
     }
 
-    // initUnitsPage();
+    initUnitsPage();
 
 
-    
+
 }
 
 // Erstelle Vibrationsmuster auf Basis von "muster" (s für short, l für long, " " für Leerzeichen)
