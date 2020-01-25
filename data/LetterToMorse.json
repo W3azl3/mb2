@@ -42,5 +42,6 @@
     "/": "lssls",
     "@": "sllsls",
     "(": "lslls",
-    ")": "lsllsl"
+    ")": "lsllsl",
+    " ": "l"
   }
