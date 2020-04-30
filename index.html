@@ -43,7 +43,11 @@ Leerzeichen werden nicht korrekt erkannt
                 <div class="page-content">
                     <div class="card">
                         <div class="card-content card-content-padding">
-                            <div class="block-title">Eingabemaske</div>
+                            <div class="block-title">Übersetzungstool</div>
+                            <br>
+                            <div class="block">In diesem Abschnitt wird der im Eingabefeld eingegebene Text nach dem Auslösen den "Übersetzen"-Buttons in einen Morsecode übersetzt.
+                            </div>
+                            <br>
                             <div class="list inline-labels no-hairlines-md">
                                 <ul>
                                     <li class="item-content item-input">
@@ -64,10 +68,10 @@ Leerzeichen werden nicht korrekt erkannt
                             <p></p>
                             <div class="block">
                                 <div class="row">
-                                    <button class="button col"
+                                    <button class="col button button-fill"
                                         onclick="alphabet(letterToMorse, 'uebung')">Übersetzen</button>
                                     <div class="block">
-                                        <div class="block-title">
+                                        <div class="block">
                                             <div class="card-content">Der Morsetext lautet: </div>
                                         </div>
                                         <div class="card-content" id="morseSignLetter"></div>
@@ -83,7 +87,11 @@ Leerzeichen werden nicht korrekt erkannt
 
                     <div class="card">
                         <div class="card-content card-content-padding">
-
+                            <div class="block-title">Morsespiel</div>
+                            <br>
+                            <div class="block">In diesem Abschnitt werden die gelernten Kenntnisse in spielerischer Form überprüft. Starten Sie das Spiel mithilfe des Buttons "Neue Spielrunde" und wählen Sie anschließend die korrekte Lösung!
+                            </div>
+                            <br>
                             <input class="col button button-fill" type="button" value="Neue Spielrunde"
                                 onclick="startGame()">
                         </div>
@@ -94,12 +102,9 @@ Leerzeichen werden nicht korrekt erkannt
                             <button class="button col" id="solution2" onclick="spielErgebnis('2')">Button</button>
                         -->
                             <button class="col button open-alert" id="solution1"
-                                onclick="spielErgebnis('1')">Alert</button>
+                                onclick="spielErgebnis('1')"></button>
                             <button class="col button open-alert" id="solution2"
-                                onclick="spielErgebnis('2')">Alert</button>
-
-
-
+                                onclick="spielErgebnis('2')"></button>
 
                         </div>
 

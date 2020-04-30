@@ -113,6 +113,7 @@ var m_document_removeEventListener = document.removeEventListener;
 var m_window_addEventListener = window.addEventListener;
 var m_window_removeEventListener = window.removeEventListener;
 
+
 /**
  * Houses custom event handlers to intercept on document + window event listeners.
  */
@@ -661,7 +662,7 @@ var nextGuid = 1;
  * onDOMContentLoaded*         Internal event that is received when the web page is loaded and parsed.
  * onNativeReady*              Internal event that indicates the Cordova native side is ready.
  * onCordovaReady*             Internal event fired when all Cordova JavaScript objects have been created.
- * onDeviceReady*              User event fired to indicate that Cordova is ready
+ * Ready*              User event fired to indicate that Cordova is ready
  * onResume                    User event fired to indicate a start/resume lifecycle event
  * onPause                     User event fired to indicate a pause lifecycle event
  *

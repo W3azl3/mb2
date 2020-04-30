@@ -40,7 +40,6 @@ function alphabet(buchstabe, herkunft) {
     function initUnitsPage() {
         loadJson('data/LetterToMorse.json', function (response) {
             var actual_JSON = JSON.parse(response);
-            // console.log('done OOOOOIIIIOOOO' + actual_JSON.a);
             for (var i = 0; i < buchstabe.toString().length; i++) {
                 switch (buchstabe.charAt(i)) {
                     case 'a':

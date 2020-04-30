@@ -16,6 +16,7 @@ function locationupdaten() {
 }
 
 function bodyGeladen(){
+    
     if(window.usingCordova){
         //Native App
         console.log('Native Anwendung');
@@ -40,7 +41,8 @@ function initApp(){
         alertKorrekt('.open-alert').on('click', function () {
             app.dialog.alert(alertButtonText, alertButtonTitle);
           });
+
+          
     }
     
-
 document.addEventListener('deviceready', initApp, false);
